@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i Parking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+    <link href="https://webfontworld.github.io/nhn/NHNSans.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 상태바 -->
+        <div class="status-bar">
+            <div class="status-bar-content">
+                <div class="time">9:41</div>
+                <div class="icons">
+                    <div class="cellular"></div>
+                    <div class="wifi"></div>
+                    <div class="battery">
+                        <div class="battery-border"></div>
+                        <div class="battery-capacity"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 메인 컨텐츠 -->
+        <main>
+            <!-- 헤더 영역 -->
+            <header class="header">
+                <div class="car-info">
+                    <span class="license-plate">12구2345</span>
+                    <img src="icons/caret-down.svg" alt="드롭다운" class="dropdown-icon">
+                </div>
+            </header>
+
+            <!-- 검색바 -->
+            <div class="search-bar">
+                <div class="search-input">
+                    <img src="icons/search.svg" alt="검색" class="search-icon">
+                    <input type="text" placeholder="주차장, 충전소 찾기">
+                    </button>
+                </div>
+            </div>
+
+            <!-- 퀵메뉴 -->
+            <div class="quick-menu">
+                <div class="menu-item">
+                    <div class="menu-icon parking">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 10C3 6.13401 6.13401 3 10 3V3C13.866 3 17 6.13401 17 10V21C17 24.866 13.866 28 10 28V28C6.13401 28 3 24.866 3 21V10Z" fill="#FF6161"/>
+                            <foreignObject x="-12" y="-12" width="56" height="56"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(7px);clip-path:url(#bgblur_0_6_1473_clip_path);height:100%;width:100%"></div></foreignObject>
+                            <path data-figma-bg-blur-radius="14" d="M2 12C2 6.47715 6.47715 2 12 2H20C25.5228 2 30 6.47715 30 12V20C30 25.5228 25.5228 30 20 30H12C6.47715 30 2 25.5228 2 20V12Z" fill="#FF6161" fill-opacity="0.5"/>
+                            <path d="M17.1565 10.5023H12.2852C12.0983 10.5023 11.9619 10.6707 11.9619 10.8576V23.1452C11.9619 23.3321 12.0983 23.5005 12.2852 23.5005H13.8478C14.0263 23.5005 14.1711 23.3413 14.1711 23.1452V12.797H17.0218C17.9731 12.797 18.7713 13.5816 18.7713 14.6087C18.7713 15.7097 17.9731 16.5499 17.0218 16.5499H16.2051H15.8263C15.6343 16.5499 15.4794 16.7201 15.4794 16.9311V18.4448C15.4794 18.6558 15.6343 18.826 15.8263 18.826H17.175C19.2461 18.826 20.9619 16.9403 20.9619 14.6253C20.9619 12.3103 19.2461 10.5005 17.1582 10.5005L17.1565 10.5023Z" fill="white"/>
+                            <defs>
+                                <clipPath id="bgblur_0_6_1473_clip_path" transform="translate(12 12)">
+                                    <path d="M2 12C2 6.47715 6.47715 2 12 2H20C25.5228 2 30 6.47715 30 12V20C30 25.5228 25.5228 30 20 30H12C6.47715 30 2 25.5228 2 20V12Z"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span>주차장</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5581 26.7132C11.2145 27.0814 10.6035 26.7679 10.7023 26.274L11.8452 20.5598C11.8932 20.3194 11.7599 20.0796 11.5304 19.9936L6.34307 18.0483C6.00953 17.9232 5.91005 17.4994 6.1531 17.239L15.4418 7.28681C15.7855 6.9186 16.3964 7.23214 16.2976 7.72603L15.1548 13.4402C15.1067 13.6806 15.24 13.9204 15.4695 14.0064L20.6569 15.9517C20.9904 16.0768 21.0899 16.5006 20.8468 16.761L11.5581 26.7132Z" fill="#5673F2"/>
+                            <path d="M3 11C3 6.58172 6.58172 3 11 3H14C18.4183 3 22 6.58172 22 11V19C22 23.4183 18.4183 27 14 27H11C6.58172 27 3 23.4183 3 19V11Z" fill="#4063FA"/>
+                            <foreignObject x="-12" y="-12" width="56" height="56"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(7px);clip-path:url(#bgblur_0_6_1480_clip_path);height:100%;width:100%"></div></foreignObject>
+                            <path data-figma-bg-blur-radius="14" d="M2 12C2 6.47715 6.47715 2 12 2H20C25.5228 2 30 6.47715 30 12V20C30 25.5228 25.5228 30 20 30H12C6.47715 30 2 25.5228 2 20V12Z" fill="#4C6BF2" fill-opacity="0.3"/>
+                            <path d="M14.5225 23.7132C14.1788 24.0814 13.5679 23.7679 13.6667 23.274L14.4523 19.3455C14.5004 19.1051 14.3671 18.8654 14.1376 18.7793L10.3788 17.3697C10.0453 17.2447 9.94581 16.8208 10.1889 16.5604L16.9776 9.28681C17.3212 8.9186 17.9322 9.23214 17.8334 9.72603L17.0477 13.6545C16.9996 13.8949 17.1329 14.1346 17.3624 14.2207L21.1212 15.6303C21.4547 15.7553 21.5542 16.1792 21.3112 16.4396L14.5225 23.7132Z" fill="white"/>
+                            <defs>
+                                <clipPath id="bgblur_0_6_1480_clip_path" transform="translate(12 12)">
+                                    <path d="M2 12C2 6.47715 6.47715 2 12 2H20C25.5228 2 30 6.47715 30 12V20C30 25.5228 25.5228 30 20 30H12C6.47715 30 2 25.5228 2 20V12Z"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span>충전소</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon free">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="15.9288" cy="23.2699" rx="8.51397" ry="4.05142" fill="#C37EFF"/>
+                            <path d="M13.2018 25.9866H18.7968V27.3756C18.7968 27.7203 18.7244 28.0615 18.5838 28.3799C18.4433 28.6983 18.2372 28.9876 17.9774 29.2313C17.7176 29.475 17.4093 29.6683 17.0698 29.8002C16.7304 29.9321 16.3667 30 15.9993 30C15.6319 30 15.2681 29.9321 14.9287 29.8002C14.5893 29.6683 14.2809 29.475 14.0212 29.2313C13.7614 28.9876 13.5553 28.6983 13.4147 28.3799C13.2741 28.0615 13.2018 27.7203 13.2018 27.3756V25.9866ZM15.9985 2C15.1834 2 14.5178 2.62508 14.5178 3.40136V8.70365C14.5178 9.47487 15.178 10.1046 15.9985 10.1046C16.8137 10.1046 17.4796 9.47957 17.4796 8.70365V3.40136C17.4796 2.62508 16.8133 2 15.9985 2Z" fill="#B155FF"/>
+                            <foreignObject x="-2" y="-0.221573" width="36" height="32.2112"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2.5px);clip-path:url(#bgblur_0_6_1502_clip_path);height:100%;width:100%"></div></foreignObject>
+                            <path data-figma-bg-blur-radius="5" d="M25.6307 17.9437V13.8391C25.6307 8.83491 21.3193 4.77843 16 4.77843C10.6807 4.77843 6.36934 8.83455 6.36934 13.8391V17.9437C4.4136 18.5605 3 20.2983 3 22.3471C3 24.9104 5.20985 26.9896 7.93448 26.9896H24.0655C26.7901 26.9896 29 24.9104 29 22.3471C29 20.2986 27.586 18.5605 25.6307 17.9437Z" fill="#C37DFF" fill-opacity="0.5"/>
+                            <path d="M6.11696 23.3926C6.11696 23.3022 6.12197 23.2132 6.13046 23.1227C6.13393 23.0978 6.13547 23.0728 6.13894 23.0482C6.13393 23.0884 6.13393 23.0855 6.14202 23.0388C6.1624 22.9157 6.19295 22.7943 6.23341 22.6756C6.24845 22.6286 6.26503 22.5819 6.28354 22.5353C6.28817 22.5212 6.32981 22.4231 6.29973 22.4919C6.38871 22.2971 6.50197 22.1129 6.63713 21.9431C6.65371 21.9214 6.65217 21.9243 6.63058 21.9507L6.67877 21.8946C6.73661 21.8306 6.79677 21.768 6.86001 21.7076C6.92325 21.6477 6.98979 21.591 7.05936 21.5376C7.07247 21.5268 7.1519 21.4689 7.0956 21.5098C7.13725 21.4801 7.17889 21.4537 7.22208 21.4255C7.37189 21.3306 7.53096 21.2492 7.69714 21.1824C7.62079 21.2121 7.73878 21.1683 7.74341 21.1668C7.79353 21.1495 7.84173 21.1343 7.8934 21.1198C8.02018 21.0829 8.14954 21.0542 8.28054 21.0341C8.33028 21.0279 8.33337 21.0265 8.29018 21.0312C8.4115 21.0177 8.53356 21.0109 8.65573 21.0109C8.76538 21.0093 8.87007 20.9678 8.94765 20.8951C9.02523 20.8224 9.06961 20.7242 9.0714 20.6213C9.0714 20.4108 8.88169 20.2299 8.65573 20.2314C7.76693 20.2379 6.90319 20.5667 6.27351 21.1574C5.64345 21.7481 5.29294 22.5584 5.28639 23.3926C5.28484 23.6028 5.47918 23.7822 5.70167 23.7822C5.92763 23.7822 6.11542 23.6028 6.11696 23.3926Z" fill="url(#paint0_linear_6_1502)"/>
+                            <defs>
+                                <clipPath id="bgblur_0_6_1502_clip_path" transform="translate(2 0.221573)">
+                                    <path d="M25.6307 17.9437V13.8391C25.6307 8.83491 21.3193 4.77843 16 4.77843C10.6807 4.77843 6.36934 8.83455 6.36934 13.8391V17.9437C4.4136 18.5605 3 20.2983 3 22.3471C3 24.9104 5.20985 26.9896 7.93448 26.9896H24.0655C26.7901 26.9896 29 24.9104 29 22.3471C29 20.2986 27.586 18.5605 25.6307 17.9437Z"/>
+                                </clipPath>
+                                <linearGradient id="paint0_linear_6_1502" x1="7.17889" y1="20.2314" x2="7.17889" y2="23.7822" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" stop-opacity="0.52"/>
+                                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span>무료</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-icon monthly">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 17C6 13.6863 8.68629 11 12 11H21C24.3137 11 27 13.6863 27 17V22C27 25.3137 24.3137 28 21 28H12C8.68629 28 6 25.3137 6 22V17Z" fill="#FF6161" fill-opacity="0.8"/>
+                            <foreignObject x="-3" y="6" width="38" height="29.001"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(2.5px);clip-path:url(#bgblur_0_6_1491_clip_path);height:100%;width:100%"></div></foreignObject>
+                            <path data-figma-bg-blur-radius="5" d="M30 11V22.4424C30 27.1229 26.9265 30.001 22.0088 30.001H9.97559C5.10417 30.0009 2.00001 27.0633 2 22.3516V11H30Z" fill="#FF6161" fill-opacity="0.5"/>
+                            <rect x="21" y="2" width="3" height="6" rx="1.5" fill="#FF6363"/>
+                            <rect x="8" y="2" width="3" height="6" rx="1.5" fill="#FF6363"/>
+                            <foreignObject x="0" y="2" width="32" height="11"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(1px);clip-path:url(#bgblur_1_6_1491_clip_path);height:100%;width:100%"></div></foreignObject>
+                            <path data-figma-bg-blur-radius="2" d="M2 11C2.01999 10.2875 2.09685 8.87342 2.24137 8.41824C2.9793 5.85833 5.4852 4.23184 9.06726 4H22.9343C26.4856 4.24397 29.0222 5.88139 29.7602 8.41824C29.9031 8.86128 29.98 10.2863 30 11H2Z" fill="#FFD3D3" fill-opacity="0.5"/>
+                            <path d="M14.3457 23.3184C13.4888 23.3184 13 22.8105 13 21.9092V15.4092C13 14.5078 13.4888 14 14.3457 14H17.1831C19.2207 14 20.5918 15.3013 20.5918 17.3389C20.5918 19.3574 19.1382 20.6587 16.999 20.6587H15.6914V21.9092C15.6914 22.8105 15.2026 23.3184 14.3457 23.3184ZM15.6914 18.6719H16.4468C17.3418 18.6719 17.875 18.2212 17.875 17.3452C17.875 16.4756 17.3418 16.0249 16.4658 16.0249H15.6914V18.6719Z" fill="white"/>
+                            <defs>
+                                <clipPath id="bgblur_0_6_1491_clip_path" transform="translate(3 -6)">
+                                    <path d="M30 11V22.4424C30 27.1229 26.9265 30.001 22.0088 30.001H9.97559C5.10417 30.0009 2.00001 27.0633 2 22.3516V11H30Z"/>
+                                </clipPath>
+                                <clipPath id="bgblur_1_6_1491_clip_path" transform="translate(0 -2)">
+                                    <path d="M2 11C2.01999 10.2875 2.09685 8.87342 2.24137 8.41824C2.9793 5.85833 5.4852 4.23184 9.06726 4H22.9343C26.4856 4.24397 29.0222 5.88139 29.7602 8.41824C29.9031 8.86128 29.98 10.2863 30 11H2Z"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <span>월정기권</span>
+                </div>
+            </div>
+
+            <!-- 라인 배너 -->
+            <div class="line-banner">
+                <div class="banner-content">
+                    <div class="banner-text">
+                        <p>주차부터 결제까지</p>
+                        <p class="bold">i Parking, 하나로 끝</p>
+                    </div>
+                    <div class="banner-page">1/2</div>
+                </div>
+            </div>
+
+            <!-- 최근 검색 -->
+            <section class="recent-search">
+                <div class="section-header">
+                    <div class="title">
+                        <h2>최근 검색</h2>
+                    </div>
+                    <a href="#" class="more-link">더보기</a>
+                </div>
+                <div class="search-tags">
+                    <button class="tag">판교역</button>
+                    <button class="tag">NHN</button>
+                    <button class="tag">공영주차</button>
+                    <button class="tag">판교역</button>
+                    <button class="tag">플레이허브</button>
+                </div>
+            </section>
+
+            <!-- 최근 이용 주차장 -->
+            <section class="recent-parking">
+                <div class="section-header">
+                    <div class="title">
+                        <h2>최근 이용 주차장</h2>
+                    </div>
+                    <a href="#" class="more-link">더보기</a>
+                </div>
+                <div class="parking-list">
+                    <div class="parking-card available">
+                        <div class="status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">여유</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="favorite">
+<path d="M6.84786 2.64478C7.36217 1.76176 8.63784 1.76176 9.15216 2.64478L10.2905 4.59928C10.4789 4.92274 10.7947 5.15211 11.1605 5.23134L13.3711 5.71004C14.3699 5.92631 14.7641 7.13955 14.0832 7.90156L12.5761 9.5882C12.3267 9.86734 12.2061 10.2385 12.2438 10.6109L12.4717 12.8613C12.5746 13.8779 11.5426 14.6278 10.6075 14.2157L8.53767 13.3036C8.19512 13.1526 7.80489 13.1526 7.46234 13.3036L5.39254 14.2157C4.45742 14.6278 3.42539 13.8779 3.52833 12.8613L3.75617 10.6109C3.79388 10.2385 3.67329 9.86734 3.42388 9.5882L1.91682 7.90156C1.23595 7.13955 1.63015 5.92631 2.62889 5.71004L4.83951 5.23134C5.20536 5.15211 5.52106 4.92274 5.70947 4.59928L6.84786 2.64478Z" fill="#FFC300"/>
+</svg>
+                        </div>
+                        <h3>NHN 주차</h3>
+                        <p class="capacity"><span class="available-count">275</span><span class="total-capacity">/500대 가능</span></p>
+                    </div>
+                    <div class="parking-card busy">
+                        <div class="status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">혼잡</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="favorite">
+<path d="M6.84786 2.64478C7.36217 1.76176 8.63784 1.76176 9.15216 2.64478L10.2905 4.59928C10.4789 4.92274 10.7947 5.15211 11.1605 5.23134L13.3711 5.71004C14.3699 5.92631 14.7641 7.13955 14.0832 7.90156L12.5761 9.5882C12.3267 9.86734 12.2061 10.2385 12.2438 10.6109L12.4717 12.8613C12.5746 13.8779 11.5426 14.6278 10.6075 14.2157L8.53767 13.3036C8.19512 13.1526 7.80489 13.1526 7.46234 13.3036L5.39254 14.2157C4.45742 14.6278 3.42539 13.8779 3.52833 12.8613L3.75617 10.6109C3.79388 10.2385 3.67329 9.86734 3.42388 9.5882L1.91682 7.90156C1.23595 7.13955 1.63015 5.92631 2.62889 5.71004L4.83951 5.23134C5.20536 5.15211 5.52106 4.92274 5.70947 4.59928L6.84786 2.64478Z" fill="#FFC300"/>
+</svg>
+                        </div>
+                        <h3>판교 공영주차</h3>
+                        <p class="capacity"><span class="available-count">15</span><span class="total-capacity">/500대 가능</span></p>
+                    </div>
+                    <div class="parking-card sold-out">
+                        <div class="status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">매진</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="favorite">
+<path d="M6.84786 2.64478C7.36217 1.76176 8.63784 1.76176 9.15216 2.64478L10.2905 4.59928C10.4789 4.92274 10.7947 5.15211 11.1605 5.23134L13.3711 5.71004C14.3699 5.92631 14.7641 7.13955 14.0832 7.90156L12.5761 9.5882C12.3267 9.86734 12.2061 10.2385 12.2438 10.6109L12.4717 12.8613C12.5746 13.8779 11.5426 14.6278 10.6075 14.2157L8.53767 13.3036C8.19512 13.1526 7.80489 13.1526 7.46234 13.3036L5.39254 14.2157C4.45742 14.6278 3.42539 13.8779 3.52833 12.8613L3.75617 10.6109C3.79388 10.2385 3.67329 9.86734 3.42388 9.5882L1.91682 7.90156C1.23595 7.13955 1.63015 5.92631 2.62889 5.71004L4.83951 5.23134C5.20536 5.15211 5.52106 4.92274 5.70947 4.59928L6.84786 2.64478Z" fill="#FFC300"/>
+</svg>
+                        </div>
+                        <h3>백현동 공영주차</h3>
+                        <p class="capacity"><span class="available-count">0</span><span class="total-capacity">/500대 가능</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI 추천 주차권 -->
+            <section class="ai-recommendation">
+                <div class="section-header">
+                    <h2>AI추천 주차권</h2>
+                    <div class="location">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 14.6666C8.62967 14.6666 13.6667 10.6666 13.6667 6.66665C13.6667 3.72113 11.1297 1.33331 8.00004 1.33331C4.87043 1.33331 2.33337 3.72113 2.33337 6.66665C2.33337 10.6666 7.37041 14.6666 8.00004 14.6666ZM8.00004 7.99998C8.92052 7.99998 9.66671 7.25379 9.66671 6.33331C9.66671 5.41284 8.92052 4.66665 8.00004 4.66665C7.07957 4.66665 6.33337 5.41284 6.33337 6.33331C6.33337 7.25379 7.07957 7.99998 8.00004 7.99998Z" fill="#C1C7CD"/>
+                        </svg>
+                        <span>분당구 삼평동</span>
+                    </div>
+                </div>
+                <div class="recommendation-list">
+                    <div class="recommendation-card">
+                        <div class="card-header">
+                            <div class="title">
+                                <h3>판교 미래에셋벤처타워</h3>
+                                <span class="partnership">제휴</span>
+                            </div>
+                            <span class="distance">256m</span>
+                        </div>
+                        <p class="details">지하 ∙ 공영 ∙ 파킹패스</p>
+                        <div class="price">
+                            <span class="discount">월정기권 50%</span>
+                            <div class="price-info">
+                                <span class="original">500,000원</span>
+                                <span class="discounted">250,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <div class="card-header">
+                            <div class="title">
+                                <h3>판교 미래에셋벤처타워</h3>
+                                <span class="partnership">제휴</span>
+                            </div>
+                            <span class="distance">256m</span>
+                        </div>
+                        <p class="details">지하 ∙ 공영 ∙ 파킹패스</p>
+                        <div class="price">
+                            <span class="monthly">월정기권</span>
+                            <span class="discounted">250,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="map-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 14.6667C8.62967 14.6667 13.6667 10.6667 13.6667 6.66671C13.6667 3.72119 11.1297 1.33337 8.00004 1.33337C4.87043 1.33337 2.33337 3.72119 2.33337 6.66671C2.33337 10.6667 7.37041 14.6667 8.00004 14.6667ZM8.00004 8.00004C8.92052 8.00004 9.66671 7.25385 9.66671 6.33337C9.66671 5.4129 8.92052 4.66671 8.00004 4.66671C7.07957 4.66671 6.33337 5.4129 6.33337 6.33337C6.33337 7.25385 7.07957 8.00004 8.00004 8.00004Z" fill="#878D96"/>
+                    </svg>
+                    <span>지도에서 주차장 더보기</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.5 2.25L8.25 6L4.5 9.75" stroke="#878D96" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </section>
+
+            <!-- 이벤트 -->
+            <section class="event">
+                <div class="section-header">
+                    <h2>이벤트</h2>
+                    <a href="#" class="more-link">더보기</a>
+                </div>
+                <div class="event-banner">
+                    <div class="event-content">
+                        <span class="event-subtitle">아이파킹EV충전소</span>
+                        <h3 class="event-title">아이파킹EV<br>도장깨기 이벤트</h3>
+                    </div>
+                    <div class="banner-page">1/4</div>
+                </div>
+            </section>
+
+            <!-- 이용가이드 -->
+            <section class="guide">
+                <div class="guide-content">
+                    <div class="guide-layout-wrapper">
+                        <div class="guide-text-content">
+                            <h2>이용가이드</h2>
+                            <p>아이파킹 이용이 처음이신가요?</p>
+                        </div>
+                        <svg width="74" height="56" viewBox="0 0 74 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_6_1573)">
+                            <rect x="28" y="8" width="37" height="45" fill="white" stroke="#C1C7CD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34 20C39 20 49 20 49 20" stroke="#DDE1E6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34 26C39 26 49 26 49 26" stroke="#DDE1E6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <g clip-path="url(#clip1_6_1573)">
+                            <path d="M61.5 21C67.299 21 72 16.299 72 10.5C72 4.70101 67.299 0 61.5 0C55.701 0 51 4.70101 51 10.5C51 16.299 55.701 21 61.5 21Z" fill="#343A3F"/>
+                            <path d="M63 6.5C63 7.33 62.33 8 61.5 8C60.67 8 60 7.33 60 6.5C60 5.67 60.67 5 61.5 5C62.33 5 63 5.67 63 6.5Z" fill="white"/>
+                            <path d="M61.5 16V11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            </g>
+                            <path d="M30.6791 34.0098H5.80614L3.33614 35.0428C1.99314 35.6048 1.11914 36.9178 1.11914 38.3738V45.7188C1.11914 46.7158 1.92714 47.5238 2.92414 47.5238H36.9821C38.0311 47.5238 38.8821 46.6728 38.8821 45.6238V38.9698C38.8821 37.2118 37.6761 35.6828 35.9651 35.2738L30.6801 34.0108L30.6791 34.0098Z" fill="#CBCFD2"/>
+                            <path d="M31.5992 51.0773C33.9602 51.0773 35.8742 49.1634 35.8742 46.8023C35.8742 44.4413 33.9602 42.5273 31.5992 42.5273C29.2382 42.5273 27.3242 44.4413 27.3242 46.8023C27.3242 49.1634 29.2382 51.0773 31.5992 51.0773Z" fill="#313D4C"/>
+                            <path d="M31.5987 48.5138C32.5431 48.5138 33.3087 47.7482 33.3087 46.8037C33.3087 45.8593 32.5431 45.0938 31.5987 45.0938C30.6543 45.0938 29.8887 45.8593 29.8887 46.8037C29.8887 47.7482 30.6543 48.5138 31.5987 48.5138Z" fill="#6B7683"/>
+                            <path d="M8.4 51.0773C10.761 51.0773 12.675 49.1634 12.675 46.8023C12.675 44.4413 10.761 42.5273 8.4 42.5273C6.03898 42.5273 4.125 44.4413 4.125 46.8023C4.125 49.1634 6.03898 51.0773 8.4 51.0773Z" fill="#313D4C"/>
+                            <path d="M8.40141 48.5138C9.34581 48.5138 10.1114 47.7482 10.
